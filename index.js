@@ -2,12 +2,11 @@ import fs from 'fs/promises';
 import { createInterface } from 'readline/promises';
 import fileFormats from './fileFormats.js';
 import { exitCode } from 'process';
-import emptyFilesCreater from './emptyFilesCreater.js';
 const readline = createInterface({
     input: process.stdin,
     output: process.stdout
 });
-formatFiles();
+await formatFiles();
 export default async function formatFiles(path) {
     if(!path) {
         path = await pathGetter();
@@ -137,23 +136,4 @@ async function removeExtraFolders(path)
             }
         }
     }
-}
-
-export async function emptyFilesCreater() {
-    await fs.mkdir(`./Test`);
-    let allFormats = [] ;
-    for(let key of Object.keys(fileFormats)) {
-        allFormats = allFormats.concat(fileFormats[key]);
-    }
-    
-    allFormats.map(format => fs.writeFile(`./Test/index.${format}`, ''));
-    
-    await fs.mkdir(`./Test/Settingsdfasd`);
-    await fs.mkdir(`./Test/Setting`);
-    await fs.writeFile(`./Test/Setting/test.set`, '')
-    await fs.mkdir(`./Test/Setting/testrun`);
-    await fs.writeFile(`./Test/Setting/testrun/check.set`, '')
-    await fs.mkdir(`./Test/Setting/testrun/checkrun`);
-    await fs.writeFile(`./Test/Setting/testrun/checkrun/work.hat`, '')
-    await fs.writeFile(`./Test/Setting/testrun/checkrun/running.js`, '')
 }

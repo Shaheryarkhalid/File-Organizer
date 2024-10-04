@@ -1,16 +1,19 @@
 # File Organizer
 
 ## Overview
-The **File Organizer** module can be used to format directories and their nested files. 
+The **File Organizer** module formats directories and their nested files efficiently.
 
 ### Usage
 
-- **As a Module**: Import the `formatFiles` function (default export) and pass a relative or absolute path to format that folder and its contents.
+- **As a Module**: Import the `formatFiles` function (default export) and provide a relative or absolute path to format that folder and its contents.
   
-- **As a Standalone Script**: Execute the command below to format all folders and files while removing any empty directories:
+- **As a Standalone Script**: Execute the following command to format all folders and files while removing any empty directories:
   ```bash
   node ./index.js
   ```
+
+### Additional Functionality
+This module also exports an `emptyFilesCreater` function that generates dummy files and folders within a directory named **Test**. If no directory is specified, the function will create the **Test** folder in the home directory of the package.
 
 ### Supported Formats
 The following file formats are supported:
