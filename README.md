@@ -12,8 +12,6 @@ The **File Organizer** module formats directories and their nested files efficie
   node ./index.js
   ```
 
-### Additional Functionality
-This module also exports an `emptyFilesCreater` function that generates dummy files and folders within a directory named **Test**. If no directory is specified, the function will create the **Test** folder in the home directory of the package.
 
 ### Supported Formats
 The following file formats are supported:
