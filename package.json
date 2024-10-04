@@ -1,5 +1,5 @@
 {
-  "name": "file-organizer",
+  "name": "files-organizer-module",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -10,5 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+  }
 }
