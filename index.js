@@ -6,7 +6,6 @@ const readline = createInterface({
     input: process.stdin,
     output: process.stdout
 });
-await formatFiles();
 export default async function formatFiles(path) {
     if(!path) {
         path = await pathGetter();

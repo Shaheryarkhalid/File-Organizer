@@ -12,5 +12,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "file-organizer-module": "^1.0.0"
   }
 }
