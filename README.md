@@ -7,11 +7,6 @@ The **File Organizer** module formats directories and their nested files efficie
 
 - **As a Module**: Import the `formatFiles` function (default export) and provide a relative or absolute path to format that folder and its contents.
   
-- **As a Standalone Script**: Execute the following command to format all folders and files while removing any empty directories:
-  ```bash
-  node ./index.js
-  ```
-
 
 ### Supported Formats
 The following file formats are supported:
