@@ -10,6 +10,9 @@ export default async function formatFiles(path) {
     if(!path) {
         path = await pathGetter();
     }
+    if(!await checkValidPath(path)) {
+        return console.error('Invalid path'); 
+    }
     await createFolders(path);
     console.log('Folders created successfully'); 
     await folderOrFile(path);
