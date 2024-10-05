@@ -1,6 +1,6 @@
 {
   "name": "file-organizer-module",
-  "version": "1.0.01",
+  "version": "1.0.03",
   "main": "index.js",
   "type": "module",
   "scripts": {
